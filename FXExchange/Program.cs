@@ -65,6 +65,7 @@ namespace FXExchange
                     services.AddScoped<IFxExchangeValidator, FxExchangeValidator>();
                     services.AddScoped<IFxExchangeCalculator, FxExchangeCalculator>();
                     services.AddScoped<IProcessExchange, ProcessExchange>();
+                    services.AddSingleton<IExchangeRateInterface, ExchangeRate>();
                 });
 
             return hostBuilder;

@@ -4,7 +4,6 @@ C:\Personal\Projects\FXExchange\FXExchange\bin\Debug\netcoreapp3.1\FXExchange.ru
 C:\Personal\Projects\FXExchange\FXExchange\bin\Debug\netcoreapp3.1\FXExchange.runtimeconfig.dev.json
 C:\Personal\Projects\FXExchange\FXExchange\bin\Debug\netcoreapp3.1\FXExchange.dll
 C:\Personal\Projects\FXExchange\FXExchange\bin\Debug\netcoreapp3.1\FXExchange.pdb
-C:\Personal\Projects\FXExchange\FXExchange\obj\Debug\netcoreapp3.1\FXExchange.csproj.AssemblyReference.cache
 C:\Personal\Projects\FXExchange\FXExchange\obj\Debug\netcoreapp3.1\FXExchange.GeneratedMSBuildEditorConfig.editorconfig
 C:\Personal\Projects\FXExchange\FXExchange\obj\Debug\netcoreapp3.1\FXExchange.AssemblyInfoInputs.cache
 C:\Personal\Projects\FXExchange\FXExchange\obj\Debug\netcoreapp3.1\FXExchange.AssemblyInfo.cs

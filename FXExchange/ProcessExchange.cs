@@ -13,15 +13,18 @@ namespace FXExchange
         private readonly IFxExchangeCalculator fxExchangeCalculator;
 
         private readonly IFxExchangeValidator fxExchangeValidator;
-        public ProcessExchange(IFxExchangeCalculator fxExchangeCalculatorService, IFxExchangeValidator fxExchangeValidatorService)
+        private readonly IExchangeRateInterface exchangeRateInterface;
+
+        public ProcessExchange(IFxExchangeCalculator fxExchangeCalculatorService, IFxExchangeValidator fxExchangeValidatorService, IExchangeRateInterface exchangeRateInterfaceService)
         {
             fxExchangeValidator = fxExchangeValidatorService;
             fxExchangeCalculator = fxExchangeCalculatorService;
+            exchangeRateInterface = exchangeRateInterfaceService;
         }
 
         public decimal ProcessExchangeRequest(string input, ErrorList errorMessages)
         {
-            Dictionary<string, RateExchangeModel> exchangeRate = fxExchangeCalculator.GetExchangeRate();
+            Dictionary<string, RateExchangeModel> exchangeRate = exchangeRateInterface.GetExchangeRate();
 
             ExchangeRequest exchangeRequest = fxExchangeValidator.ValidateRequest(input, exchangeRate, errorMessages);
 
